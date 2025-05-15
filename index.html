@@ -203,6 +203,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -214,6 +227,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -261,6 +311,32 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#main-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Features
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Example
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -276,7 +352,33 @@
 
 
 <h1 id="labchain">Labchain</h1>
-<p>Simulator of chemistry laboratory experiments with reagents, temperature, and yield.</p>
+<p>Labchain is a simulator for chemistry laboratory experiments. It allows you to add reagents, set the temperature, and calculate the theoretical yield of a chemical reaction in a simple and intuitive way.</p>
+<h2 id="main-features">Main Features</h2>
+<ul>
+<li>Add reagents with name and amount (in mol)</li>
+<li>Set the experiment temperature (°C)</li>
+<li>Automatic calculation of theoretical yield based on reagents and temperature</li>
+</ul>
+<p>Ideal for students, teachers, and chemistry enthusiasts who want to simulate experiments quickly and didactically.</p>
+<h2 id="quick-example">Quick Example</h2>
+<p>Here's how you can use Labchain in Python:</p>
+<pre><code class="language-python">from labchain.simulator import Simulator
+
+# Create a simulator with a specific temperature
+sim = Simulator(temperature=30)
+
+# Add reagents (name, amount in mol)
+sim.add_reagent(&quot;Acetic Acid&quot;, 0.5)
+sim.add_reagent(&quot;Ethanol&quot;, 0.5)
+
+# Calculate the theoretical yield
+result = sim.calculate_yield()
+print(f&quot;Theoretical yield: {result:.2f}%&quot;)
+</code></pre>
+<p><strong>Expected output:</strong></p>
+<pre><code>Theoretical yield: 11.25%
+</code></pre>
+<p>This example shows how to set up an experiment, add reagents, and calculate the yield easily.</p>
 
 
 

@@ -266,6 +266,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simulator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reagent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#labchain.simulator" class="md-nav__link">
     <span class="md-ellipsis">
       simulator
@@ -351,6 +384,39 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#simulator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Simulator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Simulator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reagent" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reagent
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#labchain.simulator" class="md-nav__link">
     <span class="md-ellipsis">
       simulator
@@ -418,6 +484,25 @@
 
 
 <h1 id="api-reference">API - Reference</h1>
+<p>Welcome to the Labchain API Reference! Here you will find clear and concise information about the main classes and methods that power the Labchain chemistry experiment simulator.</p>
+<h2 id="simulator">Simulator</h2>
+<p>The <code>Simulator</code> class is used to create and manage experiments. You can add reagents, set the temperature, and calculate the theoretical yield of your reactions.</p>
+<h3 id="example">Example</h3>
+<pre><code class="language-python">from labchain.simulator import Simulator
+
+sim = Simulator(temperature=40)
+sim.add_reagent(&quot;Hydrogen Peroxide&quot;, 0.2)
+sim.add_reagent(&quot;Potassium Iodide&quot;, 0.1)
+yield_percent = sim.calculate_yield()
+print(f&quot;Yield: {yield_percent:.2f}%&quot;)
+</code></pre>
+<p><strong>Expected output:</strong></p>
+<pre><code>Yield: 3.00%
+</code></pre>
+<h2 id="reagent">Reagent</h2>
+<p>The <code>Reagent</code> class represents a chemical reagent, including its name and amount (in mol). Usually, you don't need to create <code>Reagent</code> objects directly; use <code>Simulator.add_reagent()</code> instead.</p>
+<hr />
+<p>Explore the automatic documentation below to understand how to use each component effectively:</p>
 
 
 <div class="doc doc-object doc-module">
